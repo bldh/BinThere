@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d6bbaf46-58f5-4ec8-9ea1-6dfaa2021377" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BinThere/DataManager.swift" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BinThere/HobartBins.csv" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/BinThere/LauncestonBins.csv" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BinThere.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/BinThere.xcodeproj/project.pbxproj" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BinThere/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/BinThere/Base.lproj/Main.storyboard" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BinThere/ViewController.swift" afterPath="$PROJECT_DIR$/BinThere/ViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BinThere.xcodeproj/project.xcworkspace/xcuserdata/bldh.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/BinThere.xcodeproj/project.xcworkspace/xcuserdata/bldh.xcuserdatad/UserInterfaceState.xcuserstate" />
     </list>
     <ignored path="BinThere.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,7 +16,7 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos_d3c847476514eda1f455fbcc0c225d68d86d3fee" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="iphoneos" />
   <component name="FavoritesManager">
     <favorites_list name="BinThere" />
   </component>
@@ -63,8 +57,8 @@
       <file leaf-file-name="ViewController.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BinThere/ViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="58" column="119" selection-start-line="58" selection-start-column="119" selection-end-line="58" selection-end-column="119" />
+            <state relative-caret-position="390">
+              <caret line="65" column="119" selection-start-line="65" selection-start-column="119" selection-end-line="65" selection-end-column="119" />
               <folding />
             </state>
           </provider>
@@ -213,12 +207,12 @@
       <updated>1469868895139</updated>
       <workItem from="1469868896675" duration="3297000" />
       <workItem from="1469880372987" duration="2605000" />
-      <workItem from="1469916216765" duration="503000" />
+      <workItem from="1469916216765" duration="727000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6405000" />
+    <option name="totallyTimeSpent" value="6629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="900" extended-state="6" />
@@ -308,8 +302,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BinThere/ViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="58" column="119" selection-start-line="58" selection-start-column="119" selection-end-line="58" selection-end-column="119" />
+        <state relative-caret-position="390">
+          <caret line="65" column="119" selection-start-line="65" selection-start-column="119" selection-end-line="65" selection-end-column="119" />
           <folding />
         </state>
       </provider>
