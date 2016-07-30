@@ -9,7 +9,7 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController, CLLocationManagerDelegate {
+class ViewController: UIViewController, CLLocationManagerDelegate,  MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var location_infomation: UILabel!
@@ -19,7 +19,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
     var coreLocationManger = CLLocationManager()
     var locationManager:LocationManager!
     
-    
+    var dataManager = DataManager()
+
     @IBAction func updateMapView(sender: UIButton) {
         getLocation()
     }
@@ -27,6 +28,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        mapView.delegate = self
         
         coreLocationManger.delegate = self;
         locationManager = LocationManager.sharedInstance
@@ -52,18 +55,24 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
         }
     }
 
-
     func displayLocation(location:CLLocation) {
+        mapView.setRegion(MKCoordinateRegion(center: location.coordinate, span: MKCoordinateSpanMake(0.05, 0.05)), animated: true)
         
-        mapView.setRegion(MKCoordinateRegion(center: CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude), span: MKCoordinateSpanMake(0.05, 0.05)), animated: true)
-        
-        let locationPinCoord = CLLocationCoordinate2D(latitude: location.coordinate.latitude , longitude: location.coordinate.longitude)
+        /* DISPLAY STUPID NUMBER OF BINS
+        var BinList = dataManager.getRubbishBins()
+        */
+        var binList = dataManager.getClosestBins(location)
+        for bin in binList
+        {
+            
+        let locationPinCoord = bin.location.coordinate
         let annotation = MKPointAnnotation()
-        
         annotation.coordinate = locationPinCoord
-        
         mapView.addAnnotation(annotation)
-        mapView.showAnnotations([annotation], animated: true)
+        mapView.showAnnotations([annotation], animated: false)
+        }
+        
+        mapView.setUserTrackingMode(MKUserTrackingMode.FollowWithHeading, animated: true)
         
         locationManager.reverseGeocodeLocationWithCoordinates(location, onReverseGeocodingCompletionHandler: { (reverseGecodeInfo, placemark, error) -> Void in
             print(reverseGecodeInfo)
@@ -77,8 +86,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate {
             self.getLocation()
         }
     }
-    
-
 
 }
 

@@ -14,6 +14,9 @@
 		C6D9B69C1D4C659600FFCBEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D9B69B1D4C659600FFCBEB /* Assets.xcassets */; };
 		C6D9B6A71D4C66A600FFCBEB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D9B6A61D4C66A600FFCBEB /* MapKit.framework */; };
 		C6D9B6A91D4C67C100FFCBEB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9B6A81D4C67C100FFCBEB /* LocationManager.swift */; };
+		EFF21F121D4C98BC009F59C8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF21F0F1D4C98BC009F59C8 /* DataManager.swift */; };
+		EFF21F131D4C98BC009F59C8 /* HobartBins.csv in Resources */ = {isa = PBXBuildFile; fileRef = EFF21F101D4C98BC009F59C8 /* HobartBins.csv */; };
+		EFF21F141D4C98BC009F59C8 /* LauncestonBins.csv in Resources */ = {isa = PBXBuildFile; fileRef = EFF21F111D4C98BC009F59C8 /* LauncestonBins.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		C6D9B6A01D4C659600FFCBEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C6D9B6A61D4C66A600FFCBEB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C6D9B6A81D4C67C100FFCBEB /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		EFF21F0F1D4C98BC009F59C8 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		EFF21F101D4C98BC009F59C8 /* HobartBins.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HobartBins.csv; sourceTree = "<group>"; };
+		EFF21F111D4C98BC009F59C8 /* LauncestonBins.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LauncestonBins.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +69,9 @@
 				C6D9B6911D4C659600FFCBEB /* AppDelegate.swift */,
 				C6D9B6A81D4C67C100FFCBEB /* LocationManager.swift */,
 				C6D9B6931D4C659600FFCBEB /* ViewController.swift */,
+				EFF21F0F1D4C98BC009F59C8 /* DataManager.swift */,
+				EFF21F101D4C98BC009F59C8 /* HobartBins.csv */,
+				EFF21F111D4C98BC009F59C8 /* LauncestonBins.csv */,
 				C6D9B6951D4C659600FFCBEB /* Main.storyboard */,
 				C6D9B69B1D4C659600FFCBEB /* Assets.xcassets */,
 				C6D9B6A01D4C659600FFCBEB /* Info.plist */,
@@ -103,7 +112,7 @@
 				TargetAttributes = {
 					C6D9B68D1D4C659600FFCBEB = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = SH63S6GAX5;
+						DevelopmentTeam = CN6FH63QFU;
 					};
 				};
 			};
@@ -130,7 +139,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFF21F141D4C98BC009F59C8 /* LauncestonBins.csv in Resources */,
 				C6D9B69C1D4C659600FFCBEB /* Assets.xcassets in Resources */,
+				EFF21F131D4C98BC009F59C8 /* HobartBins.csv in Resources */,
 				C6D9B6971D4C659600FFCBEB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +154,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6D9B6A91D4C67C100FFCBEB /* LocationManager.swift in Sources */,
+				EFF21F121D4C98BC009F59C8 /* DataManager.swift in Sources */,
 				C6D9B6941D4C659600FFCBEB /* ViewController.swift in Sources */,
 				C6D9B6921D4C659600FFCBEB /* AppDelegate.swift in Sources */,
 				C6D9B69A1D4C659600FFCBEB /* BinThere.xcdatamodeld in Sources */,
@@ -256,7 +268,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BinThere/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GovHack.BinThere;
+				PRODUCT_BUNDLE_IDENTIFIER = BinThere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -270,7 +282,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BinThere/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = GovHack.BinThere;
+				PRODUCT_BUNDLE_IDENTIFIER = BinThere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -295,6 +307,7 @@
 				C6D9B6A51D4C659600FFCBEB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
