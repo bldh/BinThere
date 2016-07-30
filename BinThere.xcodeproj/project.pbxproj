@@ -1,0 +1,315 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C6D9B6921D4C659600FFCBEB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9B6911D4C659600FFCBEB /* AppDelegate.swift */; };
+		C6D9B6941D4C659600FFCBEB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9B6931D4C659600FFCBEB /* ViewController.swift */; };
+		C6D9B6971D4C659600FFCBEB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C6D9B6951D4C659600FFCBEB /* Main.storyboard */; };
+		C6D9B69A1D4C659600FFCBEB /* BinThere.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C6D9B6981D4C659600FFCBEB /* BinThere.xcdatamodeld */; };
+		C6D9B69C1D4C659600FFCBEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D9B69B1D4C659600FFCBEB /* Assets.xcassets */; };
+		C6D9B6A71D4C66A600FFCBEB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D9B6A61D4C66A600FFCBEB /* MapKit.framework */; };
+		C6D9B6A91D4C67C100FFCBEB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9B6A81D4C67C100FFCBEB /* LocationManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C6D9B68E1D4C659600FFCBEB /* BinThere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BinThere.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6D9B6911D4C659600FFCBEB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C6D9B6931D4C659600FFCBEB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C6D9B6961D4C659600FFCBEB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C6D9B6991D4C659600FFCBEB /* BinThere.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BinThere.xcdatamodel; sourceTree = "<group>"; };
+		C6D9B69B1D4C659600FFCBEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C6D9B6A01D4C659600FFCBEB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C6D9B6A61D4C66A600FFCBEB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C6D9B6A81D4C67C100FFCBEB /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C6D9B68B1D4C659600FFCBEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D9B6A71D4C66A600FFCBEB /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C6D9B6851D4C659600FFCBEB = {
+			isa = PBXGroup;
+			children = (
+				C6D9B6A61D4C66A600FFCBEB /* MapKit.framework */,
+				C6D9B6901D4C659600FFCBEB /* BinThere */,
+				C6D9B68F1D4C659600FFCBEB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C6D9B68F1D4C659600FFCBEB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C6D9B68E1D4C659600FFCBEB /* BinThere.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C6D9B6901D4C659600FFCBEB /* BinThere */ = {
+			isa = PBXGroup;
+			children = (
+				C6D9B6911D4C659600FFCBEB /* AppDelegate.swift */,
+				C6D9B6A81D4C67C100FFCBEB /* LocationManager.swift */,
+				C6D9B6931D4C659600FFCBEB /* ViewController.swift */,
+				C6D9B6951D4C659600FFCBEB /* Main.storyboard */,
+				C6D9B69B1D4C659600FFCBEB /* Assets.xcassets */,
+				C6D9B6A01D4C659600FFCBEB /* Info.plist */,
+				C6D9B6981D4C659600FFCBEB /* BinThere.xcdatamodeld */,
+			);
+			path = BinThere;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C6D9B68D1D4C659600FFCBEB /* BinThere */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C6D9B6A31D4C659600FFCBEB /* Build configuration list for PBXNativeTarget "BinThere" */;
+			buildPhases = (
+				C6D9B68A1D4C659600FFCBEB /* Sources */,
+				C6D9B68B1D4C659600FFCBEB /* Frameworks */,
+				C6D9B68C1D4C659600FFCBEB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BinThere;
+			productName = BinThere;
+			productReference = C6D9B68E1D4C659600FFCBEB /* BinThere.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C6D9B6861D4C659600FFCBEB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Daniel Richardson";
+				TargetAttributes = {
+					C6D9B68D1D4C659600FFCBEB = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = SH63S6GAX5;
+					};
+				};
+			};
+			buildConfigurationList = C6D9B6891D4C659600FFCBEB /* Build configuration list for PBXProject "BinThere" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C6D9B6851D4C659600FFCBEB;
+			productRefGroup = C6D9B68F1D4C659600FFCBEB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C6D9B68D1D4C659600FFCBEB /* BinThere */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C6D9B68C1D4C659600FFCBEB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D9B69C1D4C659600FFCBEB /* Assets.xcassets in Resources */,
+				C6D9B6971D4C659600FFCBEB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C6D9B68A1D4C659600FFCBEB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C6D9B6A91D4C67C100FFCBEB /* LocationManager.swift in Sources */,
+				C6D9B6941D4C659600FFCBEB /* ViewController.swift in Sources */,
+				C6D9B6921D4C659600FFCBEB /* AppDelegate.swift in Sources */,
+				C6D9B69A1D4C659600FFCBEB /* BinThere.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C6D9B6951D4C659600FFCBEB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C6D9B6961D4C659600FFCBEB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C6D9B6A11D4C659600FFCBEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C6D9B6A21D4C659600FFCBEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C6D9B6A41D4C659600FFCBEB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = BinThere/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GovHack.BinThere;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		C6D9B6A51D4C659600FFCBEB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = BinThere/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = GovHack.BinThere;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C6D9B6891D4C659600FFCBEB /* Build configuration list for PBXProject "BinThere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6D9B6A11D4C659600FFCBEB /* Debug */,
+				C6D9B6A21D4C659600FFCBEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C6D9B6A31D4C659600FFCBEB /* Build configuration list for PBXNativeTarget "BinThere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6D9B6A41D4C659600FFCBEB /* Debug */,
+				C6D9B6A51D4C659600FFCBEB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C6D9B6981D4C659600FFCBEB /* BinThere.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C6D9B6991D4C659600FFCBEB /* BinThere.xcdatamodel */,
+			);
+			currentVersion = C6D9B6991D4C659600FFCBEB /* BinThere.xcdatamodel */;
+			path = BinThere.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C6D9B6861D4C659600FFCBEB /* Project object */;
+}
