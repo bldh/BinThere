@@ -9,7 +9,6 @@
 import UIKit
 import MapKit
 
-class ViewController: UIViewController, CLLocationManagerDelegate,  MKMapViewDelegate {
 class CustomPointAnnotation: MKPointAnnotation {
     var imageName: String!
 }
@@ -68,7 +67,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         /* DISPLAY STUPID NUMBER OF BINS
         var BinList = dataManager.getRubbishBins()
         */
-        var binList = dataManager.getClosestBins(location)
+        let binList = dataManager.getClosestBins(location)
         for bin in binList
         {
             
@@ -119,6 +118,4 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         return anView
     }
     
-}
-
 }
