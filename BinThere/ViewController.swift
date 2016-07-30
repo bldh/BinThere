@@ -10,28 +10,33 @@ import UIKit
 import MapKit
 
 class ViewController: UIViewController, CLLocationManagerDelegate,  MKMapViewDelegate {
+class CustomPointAnnotation: MKPointAnnotation {
+    var imageName: String!
+}
+
+class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
     @IBOutlet weak var location_infomation: UILabel!
-    @IBOutlet weak var latitudeText: UITextField!
-    @IBOutlet weak var Longitude: UITextField!
-    
     var coreLocationManger = CLLocationManager()
     var locationManager:LocationManager!
     
     var dataManager = DataManager()
-
+    
     @IBAction func updateMapView(sender: UIButton) {
         getLocation()
     }
 
-
-    override func viewDidLoad() {
+    
+    override func viewDidLoad() { 
         super.viewDidLoad()
         
         mapView.delegate = self
         
         coreLocationManger.delegate = self;
+        self.mapView.delegate = self
+
+        coreLocationManger.delegate = self
         locationManager = LocationManager.sharedInstance
         
         let authorizationCode = CLLocationManager.authorizationStatus()
@@ -46,6 +51,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate,  MKMapViewDel
             getLocation()
         }
     }
+    
 
     func getLocation() {
         locationManager.startUpdatingLocationWithCompletionHandler { (latitude, longitude, status, verboseMessage, error) -> Void in
@@ -56,6 +62,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate,  MKMapViewDel
     }
 
     func displayLocation(location:CLLocation) {
+
         mapView.setRegion(MKCoordinateRegion(center: location.coordinate, span: MKCoordinateSpanMake(0.05, 0.05)), animated: true)
         
         /* DISPLAY STUPID NUMBER OF BINS
@@ -73,8 +80,17 @@ class ViewController: UIViewController, CLLocationManagerDelegate,  MKMapViewDel
         }
         
         mapView.setUserTrackingMode(MKUserTrackingMode.FollowWithHeading, animated: true)
+        let locationPinCoord = CLLocationCoordinate2D(latitude: location.coordinate.latitude , longitude: location.coordinate.longitude)
+        let annotation = MKPointAnnotation()
+        annotation.coordinate = locationPinCoord
         
+        mapView.setRegion(MKCoordinateRegion(center: CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude), span: MKCoordinateSpanMake(0.05, 0.05)), animated: true)
+        
+        mapView.addAnnotation(annotation)
+        mapView.showAnnotations([annotation], animated: true)
+
         locationManager.reverseGeocodeLocationWithCoordinates(location, onReverseGeocodingCompletionHandler: { (reverseGecodeInfo, placemark, error) -> Void in
+            
             print(reverseGecodeInfo)
             let address = reverseGecodeInfo?.objectForKey("formattedAddress") as! String
             self.location_infomation.text = address
@@ -86,6 +102,23 @@ class ViewController: UIViewController, CLLocationManagerDelegate,  MKMapViewDel
             self.getLocation()
         }
     }
-
+    
+    // MARK: - MapView Delegate
+    func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        let annotationReuseId = "trash"
+        var anView = mapView.dequeueReusableAnnotationViewWithIdentifier(annotationReuseId)
+        if anView == nil {
+            anView = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationReuseId)
+        } else {
+            anView!.annotation = annotation
+        }
+        anView!.image = UIImage(named: "cock")
+        anView!.backgroundColor = UIColor.clearColor()
+        anView!.canShowCallout = false
+        
+        return anView
+    }
+    
 }
 
+}
