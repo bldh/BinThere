@@ -121,7 +121,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         } else {
             anView!.annotation = annotation
         }
-        //anView!.image = UIImage(named: "cock")
+        anView!.image = UIImage(named: "cock")
         anView!.backgroundColor = UIColor.clearColor()
         anView!.canShowCallout = false
         
