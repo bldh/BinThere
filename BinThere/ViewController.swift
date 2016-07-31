@@ -30,6 +30,12 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     override func viewDidLoad() { 
         super.viewDidLoad()
         
+        NSNotificationCenter.defaultCenter().addObserver(
+            self,
+            selector: #selector(UIApplicationDelegate.applicationDidBecomeActive(_:)),
+            name: UIApplicationDidBecomeActiveNotification,
+            object: nil)
+        
         mapView.delegate = self
         
         coreLocationManger.delegate = self;
@@ -55,8 +61,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     func getLocation() {
         locationManager.startUpdatingLocationWithCompletionHandler { (latitude, longitude, status, verboseMessage, error) -> Void in
             self.displayLocation(CLLocation(latitude: latitude, longitude: longitude))
-            print(error)
-            print(latitude, longitude)
+            //print(error)
+            //print(latitude, longitude)
         }
     }
 
@@ -67,7 +73,11 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         /* DISPLAY STUPID NUMBER OF BINS
         var BinList = dataManager.getRubbishBins()
         */
-        let binList = dataManager.getClosestBins(location)
+        // DISPLAY CLOSEST BIN OF EACH TYPE
+        //let binList = dataManager.getClosestBins(location)
+
+        let binList = dataManager.getBins(location, within: 2000.00)
+
         for bin in binList
         {
             
@@ -111,11 +121,15 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         } else {
             anView!.annotation = annotation
         }
-        anView!.image = UIImage(named: "cock")
+        //anView!.image = UIImage(named: "cock")
         anView!.backgroundColor = UIColor.clearColor()
         anView!.canShowCallout = false
         
         return anView
+    }
+    
+    func applicationDidBecomeActive(notification: NSNotification) {
+        getLocation()
     }
     
 }
