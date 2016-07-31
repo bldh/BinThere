@@ -18,12 +18,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wld-Es-7cU">
-                                <rect key="frame" x="20" y="28" width="560" height="371"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="371" id="Z8s-or-ZQu"/>
-                                </constraints>
-                            </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cae-h1-byo">
                                 <rect key="frame" x="20" y="407" width="123" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -43,6 +37,12 @@
                                     <action selector="updateMapView:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KeY-BD-doU"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wld-Es-7cU">
+                                <rect key="frame" x="20" y="28" width="560" height="371"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="371" id="Z8s-or-ZQu"/>
+                                </constraints>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>

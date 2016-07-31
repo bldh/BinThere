@@ -55,8 +55,11 @@ class DataManager {
     func createBinItem(element:String) -> Bin{
         
         NSLog("Appending " + element + "to binDict");
+        
         let dataItem = element.characters.split{$0 == ","}.map(String.init)
+        
         var newBinItem = Bin.init(location: CLLocation.init(latitude: Double(dataItem[1])!, longitude: Double(dataItem[0])!), type: Type.None, fullType: dataItem[2],distFrom: 0.00)
+        
         switch(dataItem[3]){
         case "W":
             newBinItem.type = Type.Waste
