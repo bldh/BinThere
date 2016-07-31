@@ -29,7 +29,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     override func viewDidLoad() { 
         super.viewDidLoad()
-        
         mapView.delegate = self
         
         coreLocationManger.delegate = self;
@@ -64,10 +63,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
 
         mapView.setRegion(MKCoordinateRegion(center: location.coordinate, span: MKCoordinateSpanMake(0.05, 0.05)), animated: true)
         
-        /* DISPLAY STUPID NUMBER OF BINS
-        var BinList = dataManager.getRubbishBins()
-        */
-        let binList = dataManager.getClosestBins(location)
+        // DISPLAY STUPID NUMBER OF BINS
+        var binList = dataManager.getRubbishBins()
+        
+        //let binList = dataManager.getClosestBins(location)
         for bin in binList
         {
             
@@ -111,7 +110,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         } else {
             anView!.annotation = annotation
         }
-        anView!.image = UIImage(named: "cock")
+        anView!.image = UIImage(named: "cock1")
         anView!.backgroundColor = UIColor.clearColor()
         anView!.canShowCallout = false
         
