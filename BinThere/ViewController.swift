@@ -16,7 +16,7 @@ class CustomPointAnnotation: MKPointAnnotation {
 class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
     @IBOutlet weak var mapView: MKMapView!
-    @IBOutlet weak var location_infomation: UILabel!
+    
     var coreLocationManger = CLLocationManager()
     var locationManager:LocationManager!
     
@@ -61,8 +61,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     func getLocation() {
         locationManager.startUpdatingLocationWithCompletionHandler { (latitude, longitude, status, verboseMessage, error) -> Void in
             self.displayLocation(CLLocation(latitude: latitude, longitude: longitude))
-            //print(error)
-            //print(latitude, longitude)
         }
     }
     
@@ -102,11 +100,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         //mapView.addAnnotation(annotation)
         //mapView.showAnnotations([annotation], animated: true)
         
-        locationManager.reverseGeocodeLocationWithCoordinates(location, onReverseGeocodingCompletionHandler: { (reverseGecodeInfo, placemark, error) -> Void in
-            print(reverseGecodeInfo)
-            let address = reverseGecodeInfo?.objectForKey("formattedAddress") as! String
-            self.location_infomation.text = address
-        })
     }
     
     func locationManager(manager: CLLocationManager, didChangeAuthorizationStatus status: CLAuthorizationStatus) {
@@ -127,16 +120,27 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         } else {
             anView!.annotation = annotation
         }
+        
         anView!.canShowCallout = true;
         anView!.image = UIImage(named: "cock1")
         anView!.backgroundColor = UIColor.clearColor()
-        anView!.canShowCallout = false
+       
+        let reportButton = UIButton(type: UIButtonType.Custom) as UIButton
+        reportButton.frame.size.width = 44
+        reportButton.frame.size.height = 44
+        reportButton.setTitle("Report", forState: UIControlState.Normal)
+        reportButton.addTarget(self, action: #selector(ViewController.reportButtonPressed), forControlEvents: UIControlEvents.TouchUpInside)
+        anView!.leftCalloutAccessoryView = reportButton
         
         return anView
     }
     
     func applicationDidBecomeActive(notification: NSNotification) {
         getLocation()
+    }
+    
+    func reportButtonPressed() {
+        performSegueWithIdentifier("reportViewSegue", sender: self)
     }
     
 }

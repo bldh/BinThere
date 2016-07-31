@@ -203,7 +203,7 @@ class DataManager {
         var returnList:[Bin] = []
         
         for bin in binDict{
-            if (near.distanceFromLocation(bin.location) < within && bin.type != Type.ButtOut){
+            if (near.distanceFromLocation(bin.location) < within && bin.type != Type.ButtOut && bin.type != Type.Combo){
                 returnList.append(bin)
             }
         }
