@@ -112,9 +112,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             return nil
         }
         
-        let annotationReuseId = "trash"
+        let annotationReuseId = annotation.title!
         
-        var anView = mapView.dequeueReusableAnnotationViewWithIdentifier(annotationReuseId)
+        var anView = mapView.dequeueReusableAnnotationViewWithIdentifier(annotationReuseId!)
         if anView == nil {
             anView = MKAnnotationView(annotation: annotation, reuseIdentifier: annotationReuseId)
         } else {
@@ -122,7 +122,20 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         }
         
         anView!.canShowCallout = true;
-        anView!.image = UIImage(named: "TrashPin")
+        
+        switch (annotationReuseId!) {
+        case "Waste" :
+            anView!.image = UIImage(named: "TrashPin")
+            break
+        case "Recycling" :
+            anView!.image = UIImage(named: "RecyclePin")
+            break
+        case "Dog" :
+            anView!.image = UIImage(named: "DogWastePin")
+            break
+        default: break
+        }
+        
         anView!.backgroundColor = UIColor.clearColor()
         anView!.canShowCallout = false
         
