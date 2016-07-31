@@ -3,8 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="d6bbaf46-58f5-4ec8-9ea1-6dfaa2021377" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BinThere.xcodeproj/project.xcworkspace/xcuserdata/bldh.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/BinThere.xcodeproj/project.xcworkspace/xcuserdata/bldh.xcuserdatad/UserInterfaceState.xcuserstate" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BinThere/Base.lproj/Main.storyboard" afterPath="$PROJECT_DIR$/BinThere/Base.lproj/Main.storyboard" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/BinThere.iml" afterPath="$PROJECT_DIR$/.idea/BinThere.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BinThere.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/BinThere.xcodeproj/project.pbxproj" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BinThere/DataManager.swift" afterPath="$PROJECT_DIR$/BinThere/DataManager.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BinThere/ViewController.swift" afterPath="$PROJECT_DIR$/BinThere/ViewController.swift" />
     </list>
     <ignored path="BinThere.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,7 +31,7 @@
         <entry file="file://$PROJECT_DIR$/BinThere/DataManager.swift">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="788">
-              <caret line="202" column="0" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+              <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
               <folding>
                 <element signature="e#153#170#0" expanded="true" />
               </folding>
@@ -59,9 +62,11 @@
       <file leaf-file-name="ViewController.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BinThere/ViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1560">
-              <caret line="105" column="5" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
-              <folding />
+            <state relative-caret-position="368">
+              <caret line="120" column="12" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
+              <folding>
+                <marker date="1469928226000" expanded="false" signature="157:183" ph="import ..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -194,12 +199,12 @@
       <updated>1469868895139</updated>
       <workItem from="1469868896675" duration="3297000" />
       <workItem from="1469880372987" duration="2605000" />
-      <workItem from="1469916216765" duration="1658000" />
+      <workItem from="1469916216765" duration="2997000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7560000" />
+    <option name="totallyTimeSpent" value="8899000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -266,15 +271,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1290">
           <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BinThere/LocationManager.swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-9750">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1469928226000" expanded="false" signature="157:183" ph="import ..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -297,18 +296,28 @@
     <entry file="file://$PROJECT_DIR$/BinThere/DataManager.swift">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="788">
-          <caret line="202" column="0" selection-start-line="202" selection-start-column="0" selection-end-line="202" selection-end-column="0" />
+          <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
           <folding>
             <element signature="e#153#170#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/BinThere/LocationManager.swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-9750">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/BinThere/ViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1560">
-          <caret line="105" column="5" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
-          <folding />
+        <state relative-caret-position="368">
+          <caret line="120" column="12" selection-start-line="120" selection-start-column="12" selection-end-line="120" selection-end-column="12" />
+          <folding>
+            <marker date="1469928226000" expanded="false" signature="157:183" ph="import ..." />
+          </folding>
         </state>
       </provider>
     </entry>

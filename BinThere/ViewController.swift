@@ -25,7 +25,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     @IBAction func updateMapView(sender: UIButton) {
         getLocation()
     }
-
+    
     
     override func viewDidLoad() { 
         super.viewDidLoad()
@@ -40,7 +40,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         
         coreLocationManger.delegate = self;
         self.mapView.delegate = self
-
+        
         coreLocationManger.delegate = self
         locationManager = LocationManager.sharedInstance
         
@@ -57,7 +57,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         }
     }
     
-
+    
     func getLocation() {
         locationManager.startUpdatingLocationWithCompletionHandler { (latitude, longitude, status, verboseMessage, error) -> Void in
             self.displayLocation(CLLocation(latitude: latitude, longitude: longitude))
@@ -65,46 +65,44 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
             //print(latitude, longitude)
         }
     }
-
+    
     func displayLocation(location:CLLocation) {
-
+        
         mapView.setRegion(MKCoordinateRegion(center: location.coordinate, span: MKCoordinateSpanMake(0.05, 0.05)), animated: true)
         
         // DISPLAY STUPID NUMBER OF BINS
-//        var binList = dataManager.getRubbishBins()
+        //        var binList = dataManager.getRubbishBins()
         
         //let binList = dataManager.getClosestBins(location)
-
+        
         /* DISPLAY STUPID NUMBER OF BINS
-        var BinList = dataManager.getRubbishBins()
-        */
+         var BinList = dataManager.getRubbishBins()
+         */
         // DISPLAY CLOSEST BIN OF EACH TYPE
         //let binList = dataManager.getClosestBins(location)
-
+        
         let binList = dataManager.getBins(location, within: 2000.00)
-
+        
         for bin in binList
         {
-            
-        let locationPinCoord = bin.location.coordinate
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = locationPinCoord
-        mapView.addAnnotation(annotation)
-        mapView.showAnnotations([annotation], animated: false)
+            let annotation = MKPointAnnotation()
+            annotation.coordinate = bin.location.coordinate
+            annotation.title = String(bin.type)
+            mapView.addAnnotation(annotation)
+            mapView.showAnnotations([annotation], animated: true)
         }
         
         mapView.setUserTrackingMode(MKUserTrackingMode.FollowWithHeading, animated: true)
-        let locationPinCoord = CLLocationCoordinate2D(latitude: location.coordinate.latitude , longitude: location.coordinate.longitude)
-        let annotation = MKPointAnnotation()
-        annotation.coordinate = locationPinCoord
+        //let locationPinCoord = CLLocationCoordinate2D(latitude: location.coordinate.latitude , longitude: location.coordinate.longitude)
+        //let annotation = MKPointAnnotation()
+        //annotation.coordinate = locationPinCoord
         
         mapView.setRegion(MKCoordinateRegion(center: CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude), span: MKCoordinateSpanMake(0.05, 0.05)), animated: true)
         
-        mapView.addAnnotation(annotation)
-        mapView.showAnnotations([annotation], animated: true)
-
+        //mapView.addAnnotation(annotation)
+        //mapView.showAnnotations([annotation], animated: true)
+        
         locationManager.reverseGeocodeLocationWithCoordinates(location, onReverseGeocodingCompletionHandler: { (reverseGecodeInfo, placemark, error) -> Void in
-            
             print(reverseGecodeInfo)
             let address = reverseGecodeInfo?.objectForKey("formattedAddress") as! String
             self.location_infomation.text = address
@@ -119,6 +117,9 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     // MARK: - MapView Delegate
     func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
+        if(annotation.title! == "Current Location" ){
+            return nil
+        }
         let annotationReuseId = "trash"
         var anView = mapView.dequeueReusableAnnotationViewWithIdentifier(annotationReuseId)
         if anView == nil {
@@ -126,6 +127,7 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         } else {
             anView!.annotation = annotation
         }
+        anView!.canShowCallout = true;
         anView!.image = UIImage(named: "cock1")
         anView!.backgroundColor = UIColor.clearColor()
         anView!.canShowCallout = false

@@ -112,7 +112,7 @@
 				TargetAttributes = {
 					C6D9B68D1D4C659600FFCBEB = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = SH63S6GAX5;
+						DevelopmentTeam = CN6FH63QFU;
 					};
 				};
 			};
@@ -268,7 +268,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BinThere/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = bldh.BinThere;
+				PRODUCT_BUNDLE_IDENTIFIER = BinThere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -282,7 +282,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BinThere/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = bldh.BinThere;
+				PRODUCT_BUNDLE_IDENTIFIER = BinThere;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
