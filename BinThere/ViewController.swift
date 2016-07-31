@@ -29,6 +29,13 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     
     override func viewDidLoad() { 
         super.viewDidLoad()
+        
+        NSNotificationCenter.defaultCenter().addObserver(
+            self,
+            selector: #selector(UIApplicationDelegate.applicationDidBecomeActive(_:)),
+            name: UIApplicationDidBecomeActiveNotification,
+            object: nil)
+        
         mapView.delegate = self
         
         coreLocationManger.delegate = self;
@@ -54,8 +61,8 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
     func getLocation() {
         locationManager.startUpdatingLocationWithCompletionHandler { (latitude, longitude, status, verboseMessage, error) -> Void in
             self.displayLocation(CLLocation(latitude: latitude, longitude: longitude))
-            print(error)
-            print(latitude, longitude)
+            //print(error)
+            //print(latitude, longitude)
         }
     }
 
@@ -64,9 +71,18 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         mapView.setRegion(MKCoordinateRegion(center: location.coordinate, span: MKCoordinateSpanMake(0.05, 0.05)), animated: true)
         
         // DISPLAY STUPID NUMBER OF BINS
-        var binList = dataManager.getRubbishBins()
+//        var binList = dataManager.getRubbishBins()
         
         //let binList = dataManager.getClosestBins(location)
+
+        /* DISPLAY STUPID NUMBER OF BINS
+        var BinList = dataManager.getRubbishBins()
+        */
+        // DISPLAY CLOSEST BIN OF EACH TYPE
+        //let binList = dataManager.getClosestBins(location)
+
+        let binList = dataManager.getBins(location, within: 2000.00)
+
         for bin in binList
         {
             
@@ -115,6 +131,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         anView!.canShowCallout = false
         
         return anView
+    }
+    
+    func applicationDidBecomeActive(notification: NSNotification) {
+        getLocation()
     }
     
 }

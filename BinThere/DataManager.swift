@@ -83,44 +83,52 @@ class DataManager {
     
     func getRubbishBins() -> [Bin]{
         var binList:[Bin] = []
+        
         for element in binDict{
             if (element.type == Type.Waste || element.type == Type.Combo || element.type == Type.Recycling)
             {
                 binList.append(element)
             }
         }
+        
         return binList
     }
     
     func getRecyclingBins() -> [Bin]{
         var binList:[Bin] = []
+        
         for element in binDict{
             if (element.type == Type.Combo || element.type == Type.Recycling)
             {
                 binList.append(element)
             }
         }
+        
         return binList
     }
     
     func getButtBins() -> [Bin]{
         var binList:[Bin] = []
+        
         for element in binDict{
             if(element.type == Type.ButtOut || element.type == Type.Waste || element.type == Type.Combo){
                 binList.append(element)
             }
         }
+        
         return binList
     }
     
     func getDogBins() -> [Bin]{
         var binList:[Bin] = []
+        
         for element in binDict{
             if (element.type == Type.Dog)
             {
                 binList.append(element)
             }
         }
+        
         return binList
     }
     
@@ -184,6 +192,19 @@ class DataManager {
 
         }
         let binList:[Bin] = [rubbish!,recycle!,dogWaste!,buttOut!]
+        
         return binList
+    }
+
+    func getBins(near:CLLocation, within:CLLocationDistance) -> [Bin] {
+        var returnList:[Bin] = []
+        
+        for bin in binDict{
+            if (near.distanceFromLocation(bin.location) < within){
+                returnList.append(bin)
+            }
+        }
+        
+        return returnList
     }
 }

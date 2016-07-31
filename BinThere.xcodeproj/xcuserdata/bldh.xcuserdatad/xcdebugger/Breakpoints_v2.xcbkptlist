@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "BinThere/ViewController.swift"
-            timestampString = "491610013.555874"
+            timestampString = "491615438.115523"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "displayLocation(_:)"
             landmarkType = "5">
          </BreakpointContent>
