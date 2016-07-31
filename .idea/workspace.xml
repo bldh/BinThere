@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d6bbaf46-58f5-4ec8-9ea1-6dfaa2021377" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BinThere.xcodeproj/project.xcworkspace/xcuserdata/bldh.xcuserdatad/UserInterfaceState.xcuserstate" afterPath="$PROJECT_DIR$/BinThere.xcodeproj/project.xcworkspace/xcuserdata/bldh.xcuserdatad/UserInterfaceState.xcuserstate" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/BinThere.iml" afterPath="$PROJECT_DIR$/.idea/BinThere.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BinThere/DataManager.swift" afterPath="$PROJECT_DIR$/BinThere/DataManager.swift" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BinThere/ViewController.swift" afterPath="$PROJECT_DIR$/BinThere/ViewController.swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BinThere.xcodeproj/project.pbxproj" afterPath="$PROJECT_DIR$/BinThere.xcodeproj/project.pbxproj" />
     </list>
     <ignored path="BinThere.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,7 +31,18 @@
             <state relative-caret-position="593">
               <caret line="205" column="118" selection-start-line="205" selection-start-column="118" selection-end-line="205" selection-end-column="118" />
               <folding>
-                <element signature="e#153#170#0" expanded="true" />
+                <marker date="1469929141000" expanded="true" signature="0:151" ph="//..." />
+                <marker date="1469929141000" expanded="true" signature="153:190" ph="import ..." />
+                <marker date="1469929141000" expanded="true" signature="202:298" ph="{...}" />
+                <marker date="1469929141000" expanded="true" signature="310:414" ph="{...}" />
+                <marker date="1469929141000" expanded="true" signature="540:1384" ph="{...}" />
+                <marker date="1469929141000" expanded="true" signature="1440:2333" ph="{...}" />
+                <marker date="1469929141000" expanded="true" signature="2373:2670" ph="{...}" />
+                <marker date="1469929141000" expanded="true" signature="2712:2979" ph="{...}" />
+                <marker date="1469929141000" expanded="true" signature="3016:3297" ph="{...}" />
+                <marker date="1469929141000" expanded="true" signature="3333:3564" ph="{...}" />
+                <marker date="1469929141000" expanded="true" signature="3626:5855" ph="{...}" />
+                <marker date="1469929141000" expanded="true" signature="5927:6224" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -60,11 +71,9 @@
       <file leaf-file-name="ViewController.swift" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/BinThere/ViewController.swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="600">
-              <caret line="131" column="38" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
-              <folding>
-                <marker date="1469929371000" expanded="false" signature="157:183" ph="import ..." />
-              </folding>
+            <state relative-caret-position="735">
+              <caret line="140" column="21" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -197,12 +206,12 @@
       <updated>1469868895139</updated>
       <workItem from="1469868896675" duration="3297000" />
       <workItem from="1469880372987" duration="2605000" />
-      <workItem from="1469916216765" duration="3498000" />
+      <workItem from="1469916216765" duration="3632000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9400000" />
+    <option name="totallyTimeSpent" value="9534000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -215,7 +224,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="900" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24952501" sideWeight="0.5" order="1" side_tool="true" content_ui="combo" />
@@ -260,7 +269,18 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#153#170#0" expanded="true" />
+            <marker date="1469929141000" expanded="true" signature="0:151" ph="//..." />
+            <marker date="1469929141000" expanded="true" signature="153:190" ph="import ..." />
+            <marker date="1469929141000" expanded="true" signature="202:298" ph="{...}" />
+            <marker date="1469929141000" expanded="true" signature="310:414" ph="{...}" />
+            <marker date="1469929141000" expanded="true" signature="540:1384" ph="{...}" />
+            <marker date="1469929141000" expanded="true" signature="1440:2333" ph="{...}" />
+            <marker date="1469929141000" expanded="true" signature="2373:2670" ph="{...}" />
+            <marker date="1469929141000" expanded="true" signature="2712:2979" ph="{...}" />
+            <marker date="1469929141000" expanded="true" signature="3016:3297" ph="{...}" />
+            <marker date="1469929141000" expanded="true" signature="3333:3564" ph="{...}" />
+            <marker date="1469929141000" expanded="true" signature="3626:5855" ph="{...}" />
+            <marker date="1469929141000" expanded="true" signature="5927:6224" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -269,9 +289,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1290">
           <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding>
-            <marker date="1469929371000" expanded="false" signature="157:183" ph="import ..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -296,7 +314,18 @@
         <state relative-caret-position="593">
           <caret line="205" column="118" selection-start-line="205" selection-start-column="118" selection-end-line="205" selection-end-column="118" />
           <folding>
-            <element signature="e#153#170#0" expanded="true" />
+            <marker date="1469929141000" expanded="true" signature="0:151" ph="//..." />
+            <marker date="1469929141000" expanded="true" signature="153:190" ph="import ..." />
+            <marker date="1469929141000" expanded="true" signature="202:298" ph="{...}" />
+            <marker date="1469929141000" expanded="true" signature="310:414" ph="{...}" />
+            <marker date="1469929141000" expanded="true" signature="540:1384" ph="{...}" />
+            <marker date="1469929141000" expanded="true" signature="1440:2333" ph="{...}" />
+            <marker date="1469929141000" expanded="true" signature="2373:2670" ph="{...}" />
+            <marker date="1469929141000" expanded="true" signature="2712:2979" ph="{...}" />
+            <marker date="1469929141000" expanded="true" signature="3016:3297" ph="{...}" />
+            <marker date="1469929141000" expanded="true" signature="3333:3564" ph="{...}" />
+            <marker date="1469929141000" expanded="true" signature="3626:5855" ph="{...}" />
+            <marker date="1469929141000" expanded="true" signature="5927:6224" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -311,11 +340,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/BinThere/ViewController.swift">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="131" column="38" selection-start-line="131" selection-start-column="38" selection-end-line="131" selection-end-column="38" />
-          <folding>
-            <marker date="1469929371000" expanded="false" signature="157:183" ph="import ..." />
-          </folding>
+        <state relative-caret-position="735">
+          <caret line="140" column="21" selection-start-line="140" selection-start-column="21" selection-end-line="140" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>

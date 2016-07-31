@@ -86,8 +86,6 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         //let annotation = MKPointAnnotation()
         //annotation.coordinate = locationPinCoord
         
-        mapView.setRegion(MKCoordinateRegion(center: CLLocationCoordinate2DMake(location.coordinate.latitude, location.coordinate.longitude), span: MKCoordinateSpanMake(0.05, 0.05)), animated: true)
-        
         //mapView.addAnnotation(annotation)
         //mapView.showAnnotations([annotation], animated: true)
         
@@ -132,9 +130,10 @@ class ViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDele
         anView!.backgroundColor = UIColor.clearColor()
        
         let reportButton = UIButton(type: UIButtonType.Custom) as UIButton
-        reportButton.frame.size.width = 44
-        reportButton.frame.size.height = 44
-        reportButton.setTitle("Report", forState: UIControlState.Normal)
+        reportButton.frame.size.width = 130
+        reportButton.frame.size.height = 40
+        var reportImg:UIImage = UIImage.init(named: "Report")!
+        reportButton.setImage(reportImg, forState: .Normal)
         reportButton.addTarget(self, action: #selector(ViewController.reportButtonPressed), forControlEvents: UIControlEvents.TouchUpInside)
         anView!.leftCalloutAccessoryView = reportButton
         

@@ -14,6 +14,7 @@
 		C6D9B6A71D4C66A600FFCBEB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6D9B6A61D4C66A600FFCBEB /* MapKit.framework */; };
 		C6D9B6A91D4C67C100FFCBEB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6D9B6A81D4C67C100FFCBEB /* LocationManager.swift */; };
 		C6D9B6AB1D4D6D4600FFCBEB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C6D9B6AA1D4D6D4500FFCBEB /* Assets.xcassets */; };
+		EF3C74841D4DA2C700CFBA9A /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF3C74831D4DA2C700CFBA9A /* ReportViewController.swift */; };
 		EFF21F121D4C98BC009F59C8 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFF21F0F1D4C98BC009F59C8 /* DataManager.swift */; };
 		EFF21F131D4C98BC009F59C8 /* HobartBins.csv in Resources */ = {isa = PBXBuildFile; fileRef = EFF21F101D4C98BC009F59C8 /* HobartBins.csv */; };
 		EFF21F141D4C98BC009F59C8 /* LauncestonBins.csv in Resources */ = {isa = PBXBuildFile; fileRef = EFF21F111D4C98BC009F59C8 /* LauncestonBins.csv */; };
@@ -29,6 +30,7 @@
 		C6D9B6A61D4C66A600FFCBEB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C6D9B6A81D4C67C100FFCBEB /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		C6D9B6AA1D4D6D4500FFCBEB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
+		EF3C74831D4DA2C700CFBA9A /* ReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		EFF21F0F1D4C98BC009F59C8 /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		EFF21F101D4C98BC009F59C8 /* HobartBins.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = HobartBins.csv; sourceTree = "<group>"; };
 		EFF21F111D4C98BC009F59C8 /* LauncestonBins.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LauncestonBins.csv; sourceTree = "<group>"; };
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				C6D9B6911D4C659600FFCBEB /* AppDelegate.swift */,
+				EF3C74831D4DA2C700CFBA9A /* ReportViewController.swift */,
 				C6D9B6A81D4C67C100FFCBEB /* LocationManager.swift */,
 				C6D9B6931D4C659600FFCBEB /* ViewController.swift */,
 				EFF21F0F1D4C98BC009F59C8 /* DataManager.swift */,
@@ -112,7 +115,7 @@
 				TargetAttributes = {
 					C6D9B68D1D4C659600FFCBEB = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = SH63S6GAX5;
+						DevelopmentTeam = CN6FH63QFU;
 					};
 				};
 			};
@@ -155,6 +158,7 @@
 			files = (
 				C6D9B6A91D4C67C100FFCBEB /* LocationManager.swift in Sources */,
 				EFF21F121D4C98BC009F59C8 /* DataManager.swift in Sources */,
+				EF3C74841D4DA2C700CFBA9A /* ReportViewController.swift in Sources */,
 				C6D9B6941D4C659600FFCBEB /* ViewController.swift in Sources */,
 				C6D9B6921D4C659600FFCBEB /* AppDelegate.swift in Sources */,
 				C6D9B69A1D4C659600FFCBEB /* BinThere.xcdatamodeld in Sources */,
@@ -268,7 +272,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BinThere/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Bin.There;
+				PRODUCT_BUNDLE_IDENTIFIER = bldh.Bin.There;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -282,7 +286,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = BinThere/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = Bin.There;
+				PRODUCT_BUNDLE_IDENTIFIER = bldh.Bin.There;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};

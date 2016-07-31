@@ -45,7 +45,7 @@ class DataManager {
                         binDict.append(newBinItem);
                     }
                 } catch {
-                    NSLog("Unable to import data")
+                    //NSLog("Unable to import data")
                 }
             }
         }
@@ -54,7 +54,7 @@ class DataManager {
     
     func createBinItem(element:String) -> Bin{
         
-        NSLog("Appending " + element + "to binDict");
+        //NSLog("Appending " + element + "to binDict");
         
         let dataItem = element.characters.split{$0 == ","}.map(String.init)
         

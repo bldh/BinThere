@@ -61,7 +61,7 @@
         <!--ReportView-->
         <scene sceneID="0k2-gW-bu1">
             <objects>
-                <viewController id="Prh-I1-BqF" userLabel="ReportView" sceneMemberID="viewController">
+                <viewController id="Prh-I1-BqF" userLabel="ReportView" customClass="ReportViewController" customModule="BinThere" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Cb7-d3-5pe"/>
                         <viewControllerLayoutGuide type="bottom" id="jW7-m1-52H"/>
@@ -76,14 +76,23 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KWN-Qu-pDT">
                                         <rect key="frame" x="0.0" y="0.0" width="560" height="200"/>
                                         <state key="normal" title="Bin Is Full"/>
+                                        <connections>
+                                            <action selector="full:" destination="Prh-I1-BqF" eventType="touchUpInside" id="HLg-ms-RHv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V5g-5b-tY9">
                                         <rect key="frame" x="0.0" y="200" width="560" height="200"/>
                                         <state key="normal" title="Bin Is Vandalised"/>
+                                        <connections>
+                                            <action selector="vandal:" destination="Prh-I1-BqF" eventType="touchUpInside" id="8YP-hb-zoQ"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lR1-Ie-Jox">
                                         <rect key="frame" x="0.0" y="400" width="560" height="200"/>
                                         <state key="normal" title="No Dog Bags Left"/>
+                                        <connections>
+                                            <action selector="dogbag:" destination="Prh-I1-BqF" eventType="touchUpInside" id="ids-wb-VFJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
